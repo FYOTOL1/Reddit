@@ -7,7 +7,7 @@ export const getUsers = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/userData/userData"
+        "https://egy-temble.github.io/Reddit/api/userData/userData"
       );
       const data = await response.data;
       return data;
@@ -24,7 +24,7 @@ export const getUserFeeds = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const getFeeds = await axios.get(
-        "http://localhost:3000/api/feedData/feedData"
+        "https://egy-temble.github.io/Reddit/api/feedData/feedData"
       );
       const res = await getFeeds.data;
       return res;
@@ -40,7 +40,7 @@ export const getCommunity = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const getComm = await axios.get(
-        "http://localhost:3000/api/communityData/communityData"
+        "https://egy-temble.github.io/Reddit/api/communityData/communityData"
       );
       const data = await getComm.data;
       return data;
@@ -56,7 +56,7 @@ export const postUser = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/userData/userData",
+        "https://egy-temble.github.io/Reddit/api/userData/userData",
         { ...data }
       );
       return res;

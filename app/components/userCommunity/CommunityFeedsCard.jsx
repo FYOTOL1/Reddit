@@ -23,7 +23,7 @@ const CommunityFeedsCard = ({
   const likeFun = async () => {
     if (actionStorage === "true") {
       const postLike = await axios.patch(
-        `http://localhost:3000/api/feedData/${id}`,
+        `https://egy-temble.github.io/Reddit/api/feedData/${id}`,
         {
           lvl: LvL - 1,
         }
@@ -31,7 +31,7 @@ const CommunityFeedsCard = ({
       await dispatch(changeAction(id));
     } else {
       const postLike = await axios.patch(
-        `http://localhost:3000/api/feedData/${id}`,
+        `https://egy-temble.github.io/Reddit/api/feedData/${id}`,
         {
           lvl: LvL + 1,
         }
