@@ -1,0 +1,124 @@
+.feedCard {
+  background-color: #fff;
+  min-height: 220px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #80808061;
+  overflow: hidden;
+}
+.FEEDCARD2 {
+  min-height: 200px !important;
+}
+.feedCard .topSide {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  padding-left: 0;
+  padding-top: 0;
+}
+.feedCard .topSide .rightSide {
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.feedCard .topSide .leftSide {
+  width: 90px;
+  height: 100%;
+}
+.feedCard .topSide .leftSide ul {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 8px 5px;
+  background-color: #eeeeee8d;
+  border-radius: 0 0 15px 0;
+}
+.feedCard .topSide .leftSide ul li {
+  font-size: 30px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.feedCard .topSide .leftSide ul li:nth-child(1):hover {
+  transform: translateY(-3px);
+}
+.feedCard .topSide .leftSide ul li:nth-child(1) {
+  font-size: 28px;
+}
+.feedCard .topSide .leftSide ul li:nth-child(2) {
+  font-size: 23px;
+}
+.UL2 {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center !important;
+  padding: 8px 5px;
+  background-color: #eeeeee8d;
+  border-radius: 0 0 15px 0;
+}
+.feedCard .topSide .rightSide .link_time {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 350px;
+  color: gray;
+}
+.feedCard .topSide .rightSide .link_time .linkUser {
+  text-decoration: underline;
+  font-size: 20px;
+  color: #222;
+}
+.feedCard .topSide .rightSide .titlePost {
+  margin-top: 5px;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.feedCard .bottomSide {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgba(128, 128, 128, 0.083);
+}
+.feedCard .bottomSide div {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  width: fit-content;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.feedCard .bottomSide div p {
+  margin: 0 5px;
+}
+@media (max-width: 767px) {
+  .feedCard {
+    width: 100%;
+  }
+  .feedCard .bottomSide {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.083);
+    padding: 30px 0;
+    overflow: hidden;
+  }
+}
+@media (max-width: 380px) {
+  .feedCard .topSide .rightSide {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  .feedCard .topSide .rightSide .link_time {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .feedCard .topSide .rightSide .link_time .dot {
+    display: none;
+  }
+}

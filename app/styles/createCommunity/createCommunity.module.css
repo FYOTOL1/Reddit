@@ -1,0 +1,94 @@
+.form {
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 70px);
+}
+.form .container {
+  background-color: #fff;
+  width: 75%;
+  height: 350px;
+  margin-top: 45px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form .container .titleCard h1 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #18181b;
+}
+.form .container hr {
+  margin-top: 1.5rem;
+}
+.form .container .creator {
+  margin-top: 2rem;
+}
+.form .container .creator .titleCommunity h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.form .container .creator .paragraph p {
+  color: #0f172acd;
+}
+.form .container .creator .inputForm {
+  border: 1px solid #d4d4d8;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.form .container .creator .inputForm p {
+  color: #a1a1aa;
+}
+.form .container .creator .inputForm input {
+  width: 98%;
+  color: #18181bbe;
+  font-weight: bolder;
+}
+.form .container .actionsButtons {
+  margin-top: 1.7rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+.form .container .actionsButtons .addCommunity {
+  background-color: #18181b;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f5;
+  font-size: 19px;
+  transition: all 0.2s;
+}
+.form .container .actionsButtons .addCommunity:hover {
+  background-color: #18181be7;
+}
+.form .container .actionsButtons .cancelCommunity {
+  background-color: #f4f4f5;
+  height: 50px;
+  width: 100px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #18181b;
+  font-size: 19px;
+  margin: 0 17px;
+  transition: all 0.2s;
+  position: relative;
+}
+.form .container .actionsButtons .cancelCommunity:hover {
+  background-color: #babbbb7d;
+}
+.CancelLink {
+  width: 100%;
+  padding: 10px 0;
+}
